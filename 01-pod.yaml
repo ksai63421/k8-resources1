@@ -5,7 +5,7 @@ metadata:
  namespace: roboshop # if you dont mention specific namespace it will attach to default namespace
 spec: 
  containers: 
-  -name: nginx-simple
-   image: nginx:1.14.2
-   ports:
-   - containerPort: 80
+  - name: nginx-simple
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
