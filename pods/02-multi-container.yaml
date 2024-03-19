@@ -9,4 +9,4 @@ spec:
  - name: sidecar
    image: almalinux:8 # it will come and exited
    # we need to give some command to run almalinux
-   command: ["sleep", "200"] # this container will alive for 200 seconds and then it iwll exited
+   #command: ["sleep", "200"] this container will alive for 200 seconds and then it iwll exited
