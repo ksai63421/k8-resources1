@@ -11,14 +11,14 @@ spec:
       valueFrom:
         configMapKeyRef:
          name: course-config
-         value: COURSE
+         key: COURSE
     - name: PERSON
       valueFrom:
         configMapKeyRef:
          name: course-config
-         value: TRAINER
+         key: TRAINER
     - name: DURATION
       valueFrom:
         configMapKeyRef:
          name: course-config
-         value: DURATION
+         key: DURATION
