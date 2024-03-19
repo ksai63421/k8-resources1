@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    aenvironment: dev
+    environment: dev
     app: frontend
 spec:
   containers:
@@ -12,3 +12,17 @@ spec:
     ports:
       - containerPort: 80
         name: http-web-svc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    environment: dev
+    app: frontend
+  ports:
+  - name: name-of-service-port
+    protocol: TCP
+    port: 80 # service port
+    targetPort: http-web-svc # container port
